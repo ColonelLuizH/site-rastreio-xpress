@@ -1,0 +1,429 @@
+/*Luiz Henrique de Almeida e Albuquerque*/
+/* Estilização geral */
+*  { /*asterisco como seletor universal para todos os elementos*/
+    font-family:  'Helvetica Neue',  Helvetica, sans-serif, arial;
+    color: #2BC866;
+    
+}
+body  {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*estilização do header*/
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /*header fica por cima do resto*/
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*estilização da logo*/
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #004AAD; /*azul da logo*/
+}
+
+/*estilização do menu de navegação*/
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #004AAD;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff; /*ao passar o mouse*/
+}
+
+/*estilização dos botões*/
+.buttons button {
+    border: none;
+    border-radius: 8px;
+    outline: 1px solid #1A9047;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px;
+}
+
+#entrar-btn {
+    background-color: #fff; 
+    color: #1A9047;
+    padding: 10px 20px;
+}
+
+#entrar-btn:hover {
+    background-color: #d3f1e0;
+}
+
+#cadastrar-btn {
+    background-color: #1A9047; 
+    color: #fff;
+    padding: 10px 35px;
+}
+
+#cadastrar-btn:hover {
+    background-color: #5e5c77; 
+}
+
+/*estilização do conteúdo principal*/
+main {
+    padding: 80px 0; /*espaço para o header fixo*/
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-container input {
+    width: 300px;
+    padding: 10px;
+    color: #000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.input-container button {
+    background-color: #5e5c77; /*botão "Rastrear"*/
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+#rastrear-btn img {
+    margin-right: 3px;
+    width: 15px;
+    vertical-align: middle; /*centralizar*/
+}
+
+.input-container button:hover {
+    background-color: #2BC866; /*verde ao passar o mouse*/
+}
+
+/*estilização da seção de prédios verdes*/
+.predios {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.predios img {
+    max-width: 100%;
+}
+/*pagina 2------------------------------------------------------------------*/
+.hero.page-2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #000;
+    font-family: Helvetica, sans-serif;
+}
+
+
+.features {
+    display: flex; /*flexbox*/
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    flex-direction: row;
+    
+}
+
+.feature {
+    text-align: center;
+    flex: 1;
+    /*flex-wrap: wrap;*/
+    
+    margin: 0 10px;   
+}
+/*width: 30%;*/
+.feature img {
+    /*ajuste no tamanho dos ícones*/
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.cta {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.cta button {
+    background-color: #2BC866;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.cta button:hover {
+    background-color: #1A9047;
+}
+
+/*------------------------------------------------------------------
+.section-feature {
+    padding: 50px 0;
+    background-color: #ca2424;
+}
+
+pagina 3------------------------------------------------------------------*/
+
+.linha {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    
+}
+
+/* Estilos para a seção principal */
+.green-section {
+    background-color: #2BC866;
+    padding: 50px 0; /*espaçamento*/
+    display: flex; /*flexbox alinhamento*/
+    justify-content: center; /*centralizar*/
+    align-items: center; /*alinhar*/
+}
+
+
+
+
+
+
+.content {
+    display: flex; 
+    gap: 10px; /*espaçamento*/
+    flex-direction: column;
+    align-items: flex-start; 
+    max-width: 1000px;
+}
+
+
+
+.text {
+    
+    
+    text-align: left; 
+    /*max-width: 4000px;*/
+    flex-direction: row;
+    flex: 1;
+    align-items: flex-start;
+}
+
+
+.text h2 {
+    color: #fff; 
+    font-size: 36px; 
+    font-weight: 700; 
+    margin-bottom: 20px; /*espaçamento de baixo*/
+}
+
+
+.text p {
+    font-size: 18px; 
+    line-height: 1.5;
+    color: #fff;
+}
+
+/*imagem garota*/
+.imagegrl {
+    text-align: center;
+    
+    width: 1000%; 
+    /*float: right;*/
+    margin-left: 20px;
+    max-width: 1000px;
+    height: auto;
+    flex: 6 10 auto;
+    margin-left: 16px;
+    
+}
+
+/*botões logos*/
+.logos {
+  /*display: grid; 
+    gap: 15px; 
+    grid-template-columns: 1fr 1fr; /
+    grid-template-rows: 1fr; */
+    gap: 30px; /*espaço entre logos*/
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: normal;
+}
+
+
+.logo-button {
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    
+    
+}
+
+/*imagem logo*/
+.logo-button img {
+    width: 100px; 
+  height: 40px;
+    
+}
+
+.caixa-branca {
+    background-color: rgb(149, 240, 155);
+    /*deixei a caixa esverdeada pra poder enxergar os elementos brancos da logo*/
+    padding: 20px 200px; 
+    border-radius: 50px;
+    
+  }
+/*pagina 4------------------------------------------------------------------*/
+
+
+.heroi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f2f2f2;
+}
+
+.heroi__image {
+    width: 500px;
+}
+
+.heroi__text {
+    width: 500px;
+}
+
+.heroi__title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.heroi__description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+
+.conteudo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.parte{
+    width: calc(20% - 50px); /*20% da largura menos o espaçamento entre as colunas */
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.parte__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.parte__description {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    
+}
+
+.parte__list {
+    list-style: disc;
+    margin-right: 10px;
+    padding-left: 15px;
+    margin-top: 20px;
+}
+
+.parte img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.parte__list li {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+
+  /*footer*/
+
+.rodape {
+    background-color: #333;
+    /*color: #fff;*/
+    padding: 20px 0 100px;
+    text-align: center;
+}
